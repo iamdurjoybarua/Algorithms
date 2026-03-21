@@ -23,3 +23,13 @@ The implementations are organized by algorithmic technique:
 To run these implementations, you will need:
 * **Compiler**: GCC/G++ (for C/C++) or Python 3.x
 * **IDE/Editor**: VS Code, Code::Blocks, or PyCharm
+
+---
+
+## Author
+
+Durjoy Barua / https://github.com/iamdurjoybarua
+
+Feel free to use these examples as a foundation for your own projects and to experiment with the code! 
+Happy coding!
+
