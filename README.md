@@ -39,6 +39,7 @@ Efficient large-scale data segmentation schemes minimizing computational runtime
 
 The implementations rely on native configurations inside standard standard-compliant environments. Compile any standalone executable using a modern `g++` compiler layout:
 
+```bash
 # General Compilation Template
 g++ -O3 -std=c++17 <filename>.cpp -o <output_executable>
 
@@ -47,12 +48,25 @@ g++ -O3 -std=c++17 dijkstra.cpp -o dijkstra_exe
 
 # Run the Compiled Binary
 ./dijkstra_exe
-## Getting Started
+```
 
-### Prerequisites
-To run these implementations, you will need:
-* **Compiler**: GCC/G++ (for C/C++) or Python 3.x
-* **IDE/Editor**: VS Code, Code::Blocks, or PyCharm
+### 📋 Expected Input Specifications
+* **Matrix Parsing:** Algorithms parsing cost models (e.g., `tsp.cpp`) expect explicit $N \times N$ integer adjacency blocks matching structural nodes.
+* **Graph Formatting:** Path components (`prim.cpp`, `dijkstra.cpp`) read topological configurations via sequential line updates indicating `[source] [destination] [edge_weight]`.
+
+---
+
+## 💻 Architecture & Optimization Paradigms
+
+* **Overflow Protection:** Computational midpoints within binary processing layers use specialized bounds management tracking:
+  $$\text{mid} = \text{low} + \frac{\text{high} - \text{low}}{2}$$
+* **Heuristic Pruning Matrix:** Traversal solutions monitor historical bounds to short-circuit recursive allocations, achieving notable execution advantages over unpruned state spaces.
+* **Modern Adjacency Standards:** Edge representations utilize optimized STL structures combining vectors with direct allocation parameters to provide cache-friendly localized graph traversals.
+
+---
+
+## 📝 License & Open Source Attribution
+This repository forms a foundation for deep algorithmic research, software engineering interviews, and data structure modeling. Code sequences are open-source and free to adapt for personal, academic, or professional projects.
 
 ---
 
@@ -62,4 +76,3 @@ Durjoy Barua / https://github.com/iamdurjoybarua
 
 Feel free to use these examples as a foundation for your own projects and to experiment with the code! 
 Happy coding!
-
