@@ -39,7 +39,6 @@ Efficient large-scale data segmentation schemes minimizing computational runtime
 
 The implementations rely on native configurations inside standard standard-compliant environments. Compile any standalone executable using a modern `g++` compiler layout:
 
-```bash
 # General Compilation Template
 g++ -O3 -std=c++17 <filename>.cpp -o <output_executable>
 
